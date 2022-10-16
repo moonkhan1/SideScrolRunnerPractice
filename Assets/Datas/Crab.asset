@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0df0e867727f24a95e0f241e102483, type: 3}
   m_Name: Crab
   m_EditorClassIdentifier: 
-  HP: 3
+  HP: 9
   damage: 2
   speed: 2
