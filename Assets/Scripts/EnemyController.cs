@@ -14,13 +14,14 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
          Player = GameObject.FindGameObjectWithTag("Player");
+         SetEnemyStats();
     }
 
     // Update is called once per frame
     void Update()
     {
         Follow();
-        SetEnemyStats();
+        
     }
 
     void SetEnemyStats()

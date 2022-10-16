@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int health = 100;
+    [SerializeField] private int _health = 100;
     private int _maxHealth = 100;
 
 
@@ -18,16 +18,18 @@ public class Health : MonoBehaviour
     public void SetHealth(int MaxHealth, int health)
     {
         this._maxHealth = MaxHealth;
-        this.health = health;
+        this._health = health;
     }
 
-    public void Damage(int damage)
+    public void Damage(int amount)
     {
-        if(damage > 0)
+        if (amount < 0)
         {
-            this.health -= damage;
+            Debug.Log("No");
         }
-        if(health <= 0)
+        this._health -= amount;
+        
+        if(_health <= 0)
         {
             Destroy(gameObject);
         }
