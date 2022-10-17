@@ -20,9 +20,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // float enemyX = Random.Range(-10f,10);
-        // float enemyY = Random.Range(-6f,6f);
-        // enemySpawn = _player.transform.position + new Vector3(enemyX,0,0);
+     
     }
 
     IEnumerator spawnEnemy(float interval, GameObject enemy)
