@@ -36,13 +36,12 @@ public class EnemyController : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position,Player.transform.position , _enemySpeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other) {
         if (other.CompareTag("Player"))
         {
             if (other.GetComponent<Health>() != null)
             {
                 other.GetComponent<Health>().Damage(_enemyDamage);
-                
             }
         }
     }
