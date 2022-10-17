@@ -42,7 +42,7 @@ public class EnemyController : MonoBehaviour
             if (other.GetComponent<Health>() != null)
             {
                 other.GetComponent<Health>().Damage(_enemyDamage);
-                this.GetComponent<Health>().Damage(100);
+                
             }
         }
     }
